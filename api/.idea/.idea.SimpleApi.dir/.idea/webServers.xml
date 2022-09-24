@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="ea31ea36-a29f-402e-bdff-d0eff3c14d0b" name="Lightsail" url="http://54.217.3.4">
+        <fileTransfer rootFolder="/home/ubuntu/Simple_Api" accessType="SFTP" host="54.217.3.4" port="22" sshConfigId="1deb7e10-4592-400a-812b-91c8286d2eb1" sshConfig="ubuntu@54.217.3.4:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

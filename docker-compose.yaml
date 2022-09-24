@@ -1,0 +1,17 @@
+﻿version: "3.7"
+services:
+  api:
+    build: api
+    restart: always
+    ports:
+      - "5000:5000"
+
+  nginx:
+    build: nginx
+    restart: always
+    ports:
+      - "80:80"
+    environment:
+      - NGINX_ENVSUBST_OUTPUT_DIR=/etc/nginx
+      - API_HOST=host.docker.internal
+      - API_PORT=5000
